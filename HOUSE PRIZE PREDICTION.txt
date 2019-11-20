@@ -1,0 +1,134 @@
+# import python basic library!
+
+import numpy as np #numpy use for mathematics 
+import seaborn as sns #seaborn use for design grid 
+import pandas as pd  #pandas use for data modification
+import matplotlib.pyplot as plt  # matplotlib.pyplot use  for plotting graph
+%matplotlib inline # supporting graph on desk
+
+# import datasheet to implication regression concept from sklearn
+ 
+from sklearn.datasets import load_boston
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_absolute_error
+
+# load boston house price predicting
+
+boston=load_boston()
+
+# use key of data
+
+boston.keys()
+
+# data key describtion
+
+boston.DESCR
+
+# feature use in data
+
+boston.feature_names
+
+# target which you want pridict in data like price
+
+boston.target
+
+# visuvalize data
+
+data=boston.data
+
+# datasheet size
+
+data.shape
+
+#here you use pandas library to modify data
+
+data=pd.DataFrame(data=data,columns=boston.feature_names)
+
+
+data.head()
+data['price']=boston.target
+data.head()
+
+# describe the data
+
+data.describe()
+
+data.info()
+
+# plot graph in pair of feature to see what relation between feature
+
+sns.pairplot(data)
+
+# hist function use to check null value
+
+data.hist(figsize=(12,12))
+
+# training the model...
+# corr function use for knowning corelation between feature.
+
+corrmat=data.corr()
+corrmat
+
+corrmat.index.values
+
+# here you use function to corelation between feature and  how to take feature which you want to find co relation,threshold use to select feature.
+
+def getCorrelationFeature(corrdata,threshold):
+    feature=[]
+    value=[]
+    for i,index in enumerate(corrdata.index):
+        if abs(corrdata[index])>threshold:
+            feature.append(index)
+            value.append(corrdata[index])
+    df=pd.DataFrame(data=value,index=feature,columns=['corr values'])
+    return df
+
+threshold=0.50
+
+# corelation between selected feature and price
+
+corr_value=getCorrelationFeature(corrmat['price'],threshold)
+corr_value
+
+corr_value.index.values
+
+correlated_data=data[corr_value.index]
+correlated_data.head()
+
+# sns use to plot grid.
+
+sns.pairplot(correlated_data)
+plt.tight_layout()
+
+x=correlated_data.drop(labels=['price'],axis=1)
+y=correlated_data['price']
+x.head()
+
+# to select data for training and testing to model.
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.20, random_state=30)
+x_train.shape,x_test.shape
+
+# use linear regression for traing data
+
+model=LinearRegression()
+model.fit(x_train,y_train)
+
+
+y_predict=model.predict(x_test)
+y_predict
+
+df=pd.DataFrame(data=[y_predict,y_test])
+df.T
+
+# findout the absolute erroe and r2_score those help to know what error in your model and accuracy of the model.
+ 
+from sklearn.metrics import r2_score
+mae=mean_absolute_error(y_test,y_predict)
+score=r2_score(y_test,y_predict)
+print('mae=',mae)
+print('r2_score=',score)
+
+model.coef_
+
+model.intercept_
