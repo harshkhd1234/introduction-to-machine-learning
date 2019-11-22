@@ -1,5 +1,6 @@
 
-Introduction to Machine Learning
+#Introduction to Machine Learning
+
 This repository contains material related to Introduction to Machine Learning Course by Code Heroku.
 
 Course Objectives
