@@ -1,9 +1,8 @@
 
-#Introduction to Machine Learning
+# Introduction to Machine Learning
 
-This repository contains material related to Introduction to Machine Learning Course by Code Heroku.
 
-Course Objectives
+# Course Objectives:
 Introduce you to fundamentals of Machine Learning
 Serve as a launch pad for your career in Machine Learning and Data science
 Who is the target audience?
