@@ -3,16 +3,16 @@
 
 
 # Course Objectives:
-Introduce you to fundamentals of Machine Learning
-Serve as a launch pad for your career in Machine Learning and Data science
-Who is the target audience?
-This course is for beginners with a none to a small amount of Machine Learning experience.
-Tutorials
-The tutorials lead you through implementing various algorithms in machine learning. All of the code is written in Python.
+Introduce you to fundamentals of Machine Learning.
+Serve as a launch pad for your career in Machine Learning and Data science.
 
-Introduction and getting started
-Introduction to machine learning
-A brief introduction on the fundamentals of machine learning.
+# Who is the target audience?
+This course is for beginners with a none to a small amount of Machine Learning experience.
+
+
+.Introduction and getting started.
+.Introduction to machine learning.
+.A brief introduction on the fundamentals of machine learning.
 
 Setup Python
 A guide for installing Python on your system.
