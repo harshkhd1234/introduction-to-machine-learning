@@ -1,4 +1,4 @@
-
+# you can join this link to communicate:https://khandelwalslackcom.slack.com/archives/CQP908L4X/p1573924826000200
 # Introduction to Machine Learning
 
 
