@@ -1,41 +1,38 @@
-# you can join this link to communicate : https://join.slack.com/t/khandelwalslackcom/shared_invite/enQtODU2ODY4NTMzNDE0LTZkNDBhZjg3ZjZmYmQ4MjAwZWM4ZmIxNDZiODUxMzY4OWE0ZjkwNDg1ZjdmM2E2YWVhYmQyMmRmNzRkZDdjNTQ
+# You can join this link to communicate through Slack: http://bit.do/slack_khandelwal
+
+
 # Introduction to Machine Learning
 
 
 # Course Objectives:
-Introduce you to fundamentals of Machine Learning.
+Introduce you to the fundamentals of Machine Learning.
 Serve as a launch pad for your career in Machine Learning and Data science.
 
 # Who is the target audience?
-This course is for beginners with a none to a small amount of Machine Learning experience.
-Introduction and getting started.
-Introduction to machine learning.
-A brief introduction on the fundamentals of machine learning.
+This course is meant for beginners with a none to a small amount of Machine Learning experience.
 
 # Setup Python
-You can use jupyter notebook setup for coding.jupyter is enroll environment of anaconda link:https://www.anaconda.com/distribution/
+You can use Jupyter notebook setup for coding. Anaconda distribution provides us with Jupyter notebook. Download link : https://www.anaconda.com/distribution/.
+We will use Scikit-Learn library of Python to build our models.
 
-# Type of machine learning:
+# Three types of Machine Learning:
 
 # Supervised Machine Learning
-Linear Regression using Scikit-Learn
-Implement linear regression to predict score of a student based on the number of hours he studies.
+Linear Regression
+Implement Linear Regression algorithm to predict score of a student based on the number of hours he studies.
 
-Naive Bayes using Scikit Learn
-Implement Naive Bayes algorithm to solve classification problems using Scikit Learn.
-
-Building a Movie Recommendation Engine
-Build a Movie Recommendation Engine in Python using Scikit Learn.
+Naive Bayes
+Implement Naive Bayes algorithm to solve Classification problems.
 
 Understanding Gradient Descent Optimization
-Learn how to use Gradient Descent optimization for solving Machine Learning problems.
+Learn how to use Gradient Descent Optimization to improve our Machine Learning models.
 
-# Unsupervised Learning
+# Unsupervised Machine Learning
 Building a Digit Recognizer using SVM
 Learn how to use Support Vector Machine (SVM) classifier for building a digit recognition system.
 
 Introduction to Unsupervised Learning using K-means
-Learn how to use K-Means clustering algorithm for Machine Learning problems.
+Learn how to use K-Means Clustering algorithm for Machine Learning problems.
 
 Principal Component Analysis (PCA)
 Learn how to perform PCA for achieving dimensionality reduction.
@@ -44,7 +41,7 @@ Face Recognition using PCA
 Learn how to implement a Face Recognition System in Python using PCA.
 
 # Reinforcement Learning
-Inroduction to Reinforcement Learning
+Introduction to Reinforcement Learning
 An introduction on how to implement Reinforcement Learning algorithms and solve the Multi Arm Bandit problem using it.
 
 Reinforcement Learning with OpenAI Gym
@@ -64,6 +61,3 @@ Build a system to recognize objects using Neural Networks.
 
 Mouse Cat Maze with Reinforcement Learning.
 Use Reinforcement Learning to solve Mouse Cat Maze.
-
-
-
